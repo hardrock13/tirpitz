@@ -1,28 +1,19 @@
-# ytdl-core-discord
+# Updated & modified ytdl-core-discord
 
-[![Build Status](https://travis-ci.org/amishshah/ytdl-core-discord.svg?branch=master)](https://travis-ci.org/amishshah/ytdl-core-discord)
-[![dependencies](https://david-dm.org/amishshah/ytdl-core-discord/status.svg)](https://david-dm.org/amishshah/ytdl-core-discord)
-[![npm](https://img.shields.io/npm/dt/ytdl-core-discord.svg)](https://www.npmjs.com/package/ytdl-core-discord)
-[![Patreon](https://img.shields.io/badge/donate-patreon-F96854.svg)](https://www.patreon.com/discordjs)
+[![dependencies](https://david-dm.org/hardrock13/tirpitz.svg)](https://david-dm.org/hardrock13/tirpitz)
 
 A [ytdl-core](https://github.com/fent/node-ytdl-core/) wrapper focused on efficiency for use in Discord music bots.
 
-You can pass the exact same arguments as you would with the ytdl-core module, with the exception that
-you must `await` the function call.  
+Check [ytdl-core-discord](https://github.com/amishshah/ytdl-core-discord) as the original is that one.
 
-## What does it do?
+This is an updated version which contains all the latest updates, mainly:
+@types/node to 13.11.1
+prism-media to 1.2.1
+ytdl-core to 2.0.1
+eslint to 6.8.0
 
-For compatible videos, this module uses [prism-media](https://github.com/amishshah/prism-media)
-to extract Opus audio from a stream without having to pipe it through FFmpeg first. This greatly
-reduces the processing power required, making playback smoother and allowing you to play over
-more connections simultaneously.
-
-For videos where the required codec (webm + opus) isn't available, the module will fallback to
-using FFmpeg to encode the stream in Opus. Many new videos on YouTube are available in this codec
-so hopefully this isn't frequent.
-
-Put simply, this module finds the most efficient way to extract a stream of Opus audio from a
-YouTube video. Even in the worst case, it should still give better performance than `ytdl-core`.
+## Additional to that, this one solves the issue of youtube short links (and other non-standard) that threw the error of "No video id found: <actual working youtube link>".
+  I don't think that was exclusive to me, because the module's use was standard. Discord.js tested version 12.1.1.
 
 ## Usage in Discord.js 12.x
 
@@ -43,5 +34,3 @@ async function play(connection, url) {
   connection.playOpusStream(await ytdl(url));
 }
 ```
-
-[![Patreon](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/discordjs)
