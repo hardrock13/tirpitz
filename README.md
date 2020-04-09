@@ -12,7 +12,7 @@ This is an updated version which contains all the latest updates, mainly:
 - ytdl-core to 2.0.1
 - eslint to 6.8.0
 
-## Additional to that, this one solves the issue of youtube short links (and other non-standard) that threw the error of "No video id found: <actual working youtube link>".
+## Additional to that, this one solves the issue of youtube short links (and other non-standard) that threw the error of "No video id found: actual-working-youtube-link".
   I don't think that was exclusive to me, because the module's use was standard. Discord.js tested version 12.1.1.
 
 ## Usage in Discord.js 12.x
