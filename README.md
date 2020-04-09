@@ -7,10 +7,10 @@ A [ytdl-core](https://github.com/fent/node-ytdl-core/) wrapper focused on effici
 Check [ytdl-core-discord](https://github.com/amishshah/ytdl-core-discord) as the original is that one.
 
 This is an updated version which contains all the latest updates, mainly:
-@types/node to 13.11.1
-prism-media to 1.2.1
-ytdl-core to 2.0.1
-eslint to 6.8.0
+- @types/node to 13.11.1
+- prism-media to 1.2.1
+- ytdl-core to 2.0.1
+- eslint to 6.8.0
 
 ## Additional to that, this one solves the issue of youtube short links (and other non-standard) that threw the error of "No video id found: <actual working youtube link>".
   I don't think that was exclusive to me, because the module's use was standard. Discord.js tested version 12.1.1.
