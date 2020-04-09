@@ -4,7 +4,7 @@
 
 A [ytdl-core](https://github.com/fent/node-ytdl-core/) wrapper focused on efficiency for use in Discord music bots.
 
-Check [ytdl-core-discord](https://github.com/amishshah/ytdl-core-discord) as the original is that one.
+Check [ytdl-core-discord](https://github.com/amishshah/ytdl-core-discord) as the original is that one. All thanks go to him.
 
 This is an updated version which contains all the latest updates, mainly:
 - @types/node to 13.11.1
